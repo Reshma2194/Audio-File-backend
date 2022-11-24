@@ -35,7 +35,7 @@ app.use("/admin",require("./routes/admin"));
 app.use("/user",require("./routes/user"));
 
 
-app.listen(8081, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("back end running on http://localhost:8081");
 });
 
