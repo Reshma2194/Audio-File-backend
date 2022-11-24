@@ -20,7 +20,7 @@ app.use((req, res, next)=>{
     next();
 });
 
-mongoose.connect("mongodb://localhost:27017/audiobackend");
+mongoose.connect("mongodb+srv://reshma:reshma1234@cluster0.esm57oj.mongodb.net/audioproject");
 let db = mongoose.connection;
 db.on("error", error=>console.log(error));
 db.on("open", ()=>console.log("Connection Established"));
